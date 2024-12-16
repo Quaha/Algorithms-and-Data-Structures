@@ -6,8 +6,14 @@ using namespace std;
 
 namespace Bridges {
 
-	/* The implementation has been tested on:
-	- https://codeforces.com/gym/100083, task C
+	/* 
+	* The implementation has been tested on:
+	* - https://codeforces.com/gym/100083, task C
+	*/
+
+	/* 
+	* Time Complexity: O(N+M)
+	* Memory Complexity: O(N+M)
 	*/
 
 	vector<pair<int, int>> bridges;
@@ -35,11 +41,17 @@ namespace Bridges {
 		}
 	}
 
+	/*
+	* Finds all bridges in an undirected graph.
+	* 
+	* @param g: An undirected unweighted graph given by adjacency lists
+	* @return bridges: Vector of bridges defined by incident vertices
+	* 
+	*/
 	vector<pair<int, int>> getBridges(const vector<vector<int>>& g) {
-		
+
 		bridges.clear();
-		deeps.clear();
-		
+
 		int N = g.size();
 
 		deeps.resize(N, -1);
@@ -51,6 +63,9 @@ namespace Bridges {
 			}
 		}
 
-		return bridges;
+		deeps.clear();
+		deeps.shrink_to_fit();
+
+		return move(bridges);
 	}
 }
