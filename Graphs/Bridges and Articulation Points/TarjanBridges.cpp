@@ -8,7 +8,7 @@ using vi = vector<int>;
 using vvi = vector<vector<int>>;
 using vii = vector<pair<int, int>>;
 
-class Bridges {
+class TarjanBridges {
 
 	/*
 	* Tarjan's algorithm for finding bridges in an undirected graph
@@ -16,7 +16,7 @@ class Bridges {
 	* Time Complexity: O(N+M)
 	* Memory Complexity: O(N+M)
 	* (|V| = N, |E| = M)
- 	*
+	*
 	* The implementation has been tested on:
 	* - https://codeforces.com/gym/100083, task C
 	*/
@@ -44,7 +44,7 @@ private:
 	}
 
 public:
-	Bridges() = delete;
+	TarjanBridges() = delete;
 	/*
 	* Finds all bridges in an undirected graph.
 	*
