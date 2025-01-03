@@ -45,12 +45,20 @@ private:
 
 public:
 	TarjanBridges() = delete;
-	/*
-	* Finds all bridges in an undirected graph.
+
+    	/*
+    	* Finds all bridges in an undirected graph.
 	*
-	* @param g: An undirected unweighted graph given by adjacency lists
-	* @return bridges: Vector of bridges defined by incident vertices
-	*/
+    	* The function takes a graph g:
+    	* -graph assignment method:  adjacency lists
+    	* -connectivity:             Both
+    	* -directed:                 No
+    	* -weighted:                 No
+    	* -other features:            -
+    	* 
+    	* The function returns a vector of pairs of vertices, the edges connecting which are bridges
+    	*/
+
 	static vii getBridges(const vvi& g) {
 
 		int N = g.size();
