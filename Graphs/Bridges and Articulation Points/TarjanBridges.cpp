@@ -51,9 +51,11 @@ public:
 	*
     	* The function takes a graph g:
     	* -graph assignment method:  adjacency lists
-    	* -connectivity:             Both
+    	* -connectivity:             Yes/No
     	* -directed:                 No
-    	* -weighted:                 No
+    	* -weighted:                 No (does not match the graph assignment method)
+	* -loops:                    Yes/No
+	* -multiple edges:           No
     	* -other features:            -
     	* 
     	* The function returns a vector of pairs of vertices, the edges connecting which are bridges
