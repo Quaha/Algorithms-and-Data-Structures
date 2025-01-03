@@ -55,8 +55,8 @@ public:
     	* -directed:                 No
     	* -weighted:                 No (does not match the graph assignment method)
 	* -loops:                    Yes/No
-	* -multiple edges:           No
-    	* -other features:            -
+	* -multiple edges:           No (multiple edges merge into one)
+    	* -other features:           -
     	* 
     	* The function returns a vector of pairs of vertices, the edges connecting which are bridges
     	*/
