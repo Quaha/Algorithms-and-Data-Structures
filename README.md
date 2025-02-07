@@ -1,5 +1,6 @@
 # Algorithms-and-Data-Structures
 ## Table of Contents
+-**C++**
+  - Нетривиальные приёмы и тонкости
 - **Графы**
-  - [Мосты и точки сочленения](Graphs/Bridges%20and%20Articulation%20Points/Bridges%20and%20Articulation%20Points.md)
-    - Алгоритм Тарьяна поиска мостов в неориентированном графе ([реализация](Graphs/Bridges%20and%20Articulation%20Points/TarjanBridges.cpp))
+  - Мосты и точки сочленения
